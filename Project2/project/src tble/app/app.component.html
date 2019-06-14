@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+<ul>
+  <li *ngFor="let c of courses">{{c}}</li>
+</ul>
+<input type="button" value="Click" (click)="abc()"/>
+<table border=1>
+  <tr>
+    <th>S.no</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>City</th>
+  </tr>
+  <tr *ngFor="let d of data; let i=index">
+    <td>{{i+1}}</td>
+    <td>{{d.name}}</td>
+    <td>{{d.age}}</td>
+    <td>{{d.city}}</td>
+  </tr>
+</table>
