@@ -1,0 +1,19 @@
+
+<div class="container text-center">
+      <h2>Product data</h2>
+
+    <div class="row" *ngFor="let pt of allProducts">
+      <div class="col-3 border">{{pt.id}}</div>
+      <div class="col-3 border">{{pt.brand}}</div>
+      <div class="col-3 border">{{pt.price}}</div>
+      <div class="col-3 border">{{pt.qty}}</div>
+      <div class="col-3 border">{{pt.price*pt.qty}}</div>
+   </div>
+</div>
+<div class="row text-primary">
+Number of Products:{{_totprd}} <br>
+Total Quantity Sold:{{tot_qty}} <br>
+Total Sales Value:{{tot_sales}}
+
+</div>  
+  

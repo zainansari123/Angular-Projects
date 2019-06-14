@@ -1,0 +1,40 @@
+<p>
+  calc works!
+</p>
+<div>
+<div>
+<button (click)="add1('1',1)">Add1</button>
+<button (click)="add2('2',2)">Add1</button>
+<button (click)="reset()">reset</button>
+</div>
+
+<div>
+  Expression:{{exp}}
+</div>
+<div>
+  value:{{val}}
+</div>
+</div>
+<div>
+  <label>New Number</label>
+  <input type="text" class="form-control"[(ngModel)]="cname">
+  <button (click)="addA()">Add</button>
+  <h4>Lists of number</h4>
+  <table> <tr>
+  <td>
+  <ul>
+  <li *ngFor="let c of arr; let typ of type;index as i">
+    {{c}} <span (click)="remove(i)">delete</span> <span>{{typ}}</span>
+ </li>
+ </ul>
+ </td>
+ <td>
+   <ul>
+     <li>
+       {{c}}
+     </li>
+   </ul>
+ </td>
+ </tr></table>
+
+</div>
